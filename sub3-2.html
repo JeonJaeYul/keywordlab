@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+
+	<script src="https://kit.fontawesome.com/d31a113c70.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="navMain">
+            <a href="./index.html"><h1 class="logoBlue"></h1></a>
+            <ul class="navbar">
+                <li><a href="#">KEYWORD LAB</a></li>
+                <li><a href="#">서비스 소개</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">소식</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+            <div class="quick">
+                <span><i class="fa-solid fa-comment"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </nav>
+        <i class="fa-solid fa-bars" id="btnHamburger"></i>
+
+        <nav id="navSub">
+            <ul class="navbar">
+                <li>
+                    <ul class="navbar2">
+                        <li><a href="./sub1-1.html">회사소개</a></li>
+                        <li><a href="#">회사연혁</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="navbar2">
+                        <li><a href="./sub2-1.html">체험단 마케팅</a></li>
+                        <li><a href="./sub2-2.html">스마트스토어 마케팅</a></li>
+                        <li><a href="#">플레이스 마케팅</a></li>
+                        <li><a href="#">인스타그램 마케팅</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="navbar2">
+                        <li><a href="./sub3-1.html">성공사례</a></li>
+                        <li><a href="./sub3-2.html">수상</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="navbar2">
+                        <li><a href="./sub4-1.html">기사</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="navbar2">
+                        <li><a href="./sub5-1.html">상담신청</a></li>
+                        <li><a href="./sub5-2.html">오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="navSide">
+            <h1 class="logoWhite"></h1>
+            <ul class="navbar">
+                <li><a href="./sub1-1.html"><sup>01</sup> KEYWORD LAB <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+                <li><a href="./sub2-1.html"><sup>02</sup> 서비스 소개 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+                <li><a href="./sub3-1.html"><sup>03</sup> 포트폴리오 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+                <li><a href="./sub4-1.html"><sup>04</sup> 소식 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+                <li><a href="./sub5-1.html"><sup>05</sup> 문의 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
+            </ul>
+            <div class="quick">
+                <span><i class="fa-solid fa-comment"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span></span>
+            </div>
+        </nav>
+        <i class="fa-solid fa-close" id="btnCloseSideMenu"></i>
+
+
+
+
+        <div class="subSection" style="margin-top: 200px; margin-bottom: 10%">
+            <div class="subTop">
+                <p class="subPath">
+                    <a href="#" class="a_black"><i class="fa fa-home"></i></a>
+                    <i class="fa-solid fa-angle-right" style="margin: 0px 15px"></i>
+                    <a href="#" class="a_black">KEYWORD LAB</a>
+                    <i class="fa-solid fa-angle-right" style="margin: 0px 15px"></i>
+                    <a href="#" class="a_blue">포트폴리오</a>
+                </p>
+                <h1 class="subTitle">수상</h1>
+                <ul class="subMenu">
+                    <li>
+                        <a href="./sub3-1.html">성공사례</a>
+                    </li>
+                    <li>
+                        <a href="./sub3-2.html" class="active">수상</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="subSection" style="margin-bottom: 5%">
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div style="width: 30%; padding: 20px; background-color: #f4f4f4; border-radius: 25px; display: flex; justify-content: space-between;">
+                    <select style="width: 30%; border: none; background-color: transparent">
+                        <option value="subject">제목</option>
+                        <option value="content">내용</option>
+                        <option value="writer">작성자</option>
+                    </select>
+                    <input type="text" name="searchText" placeholder="검색어를 입력해주세요" style="border: none; background-color: transparent; width: 60%" />
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .awardsBoxWrap {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .awardsBox {
+                width: 50%;
+                padding: 15px;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .awardsBox .awardImage {
+                width: 30%;
+                margin-right: 20px;
+            }
+
+            .awardsBox .awardImage img {
+                border: solid 1px #eee;
+            }
+
+            .awardsBox .awardContent {
+                width: 70%;
+                font-size: 0.7rem;
+            }
+
+            .awardsBox .awardContent p {
+                margin-top: 10px;
+                color: #444;
+            }
+
+        </style>
+
+        <div class="subSection" style="margin-bottom: 100px;">
+            <div class="awardsBoxWrap">
+                <div class="awardsBox">
+                        <div class="awardImage">
+                            <a href="#modalImage" rel="modal:open">
+                                <img src="../imgs/16935723879.png" width="100%" />
+                            </a>
+                        </div>
+                    <div class="awardContent">
+                        <h3>2023년 기술평가 우수기업 인증서</h3>
+                        <p>
+                            위 기업은 NICE평가정보의 기술평가 결과 기술사업역량 및 기술경쟁력이 우수한 기업임을 인증합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="awardsBox">
+                    <div class="awardImage">
+                        <a href="#modalImage" rel="modal:open">
+                            <img src="../imgs/16935721199.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="awardContent">
+                        <h3>2023년 기술평가 우수기업 인증서</h3>
+                        <p>
+                            기초연구진흥 및 기술개발지원에 관한 법률 제14조의 2제1항 및 같은 법 시행령 제27조 제1항에 따라 위와 같이 기업부설연구소로 인정합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="awardsBox">
+                    <div class="awardImage">
+                        <a href="#modalImage" rel="modal:open">
+                            <img src="../imgs/16915649359.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="awardContent">
+                        <h3>2023년 기술평가 우수기업 인증서</h3>
+                        <p>
+                            귀사는 우수한 품질과 뛰어난 서비스를 통해 소비자들에게 높은 브랜드 가치를 인정 받으며 질 높은 서비스를 실천한 기업을 대상으로 중앙일보가 후원하는 "2023 히트브랜드 대상 1위"로 선정되었기에 인증서를 수여합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="awardsBox">
+                    <div class="awardImage">
+                        <a href="#modalImage" rel="modal:open">
+                            <img src="../imgs/16935729149.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="awardContent">
+                        <h3>2023년 기술평가 우수기업 인증서</h3>
+                        <p>
+                            귀사는 건전하고 질 높은 소비문화를 촉진하고 동시에 서비스 품질 개선에 적극 반영하여 고객이 인정한 브랜드로 선정되었기에 한국프리미엄브랜드진흥원이 주최·주관하고 대한민국 고객만족브랜드협회, 데일리경제, 시사타임이 후원하는 '2022 대한민국 고객만족지수 1위' 상장을 수여합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+        <div id="modalImage" class="modal">
+            <img src="" class="bigImage" />
+        </div>
+
+
+    
+
+        <footer>
+            <div class="colLeft">
+                <img src="./imgs/footer_logo.png" alt="" />
+                <p>COPYRIGHT © 2023 KEYWORD LAB Co., Ltd. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="colRight">
+                <div class="box">
+                    <h5>INFORMATION</h5>
+                    <table>
+                        <tr>
+                            <th class="title">회사명</th>
+                            <td class="content">(주)키워드랩</td>
+                        </tr>
+                        <tr>
+                            <th class="title">사업자등록번호</th>
+                            <td class="content">591-87-02465</td>
+                        </tr>
+                        <tr>
+                            <th class="title">통신판매업 신고번호</th>
+                            <td class="content">2022-서울금천-2991</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="box">
+                    <h5>ADDRESS</h5>
+                    <table>
+                        <tr>
+                            <td class="content">서울특별시 금천구 디지털로9길 46, 5층 502호(가산동, 이엔씨드림타워7차)</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="box">
+                    <h5>CONTACT</h5>
+                    <table>
+                        <tr>
+                            <th class="title">전화번호</th>
+                            <td class="content">1522-1654</td>
+                        </tr>
+                        <tr>
+                            <th class="title">이메일</th>
+                            <td class="content">contact@keywordlab.kr</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+
+
+        <div id="quick_btn"></div>
+        <div id="top_btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+
+    </div>
+
+    <script>
+        $( function(){
+
+            $("#btnHamburger").click( function(){
+                if($(window).width() > 1280){
+                    $("#navSide").css("left", "100%").animate({
+                        "left" : "70%"
+                    })
+                }else{
+                    $("#navSide").css("left", "100%").animate({
+                        "left" : "0%"
+                    })
+                }
+                
+                $("#btnCloseSideMenu").fadeIn();
+            })
+
+            $("#btnCloseSideMenu").click( function(){
+                if($(window).width() > 1280){
+                    $("#navSide").css("left", "70%").animate({
+                        "left" : "100%"
+                    })
+                }else{
+                    $("#navSide").css("left", "0%").animate({
+                        "left" : "100%"
+                    })
+                }
+
+                $("#btnCloseSideMenu").fadeOut();
+            })
+
+            $("#navMain li").mouseover( function(){
+                $("#navSub").slideDown(300);
+            })
+
+            $("#navSub").mouseleave( function(){
+                $("#navSub").slideUp(300);
+            })
+
+            $("#top_btn").click( function(){
+                $("#sectionDots li").removeClass("active");
+                $("#sectionDots li").eq(0).addClass("active");
+                $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+                return false;
+            })
+
+            $(".awardImage").on("click", function(){
+                let img = $(this).find("img").attr("src");
+                $(".bigImage").attr("src", img);
+                $(".bigImage").css("width", "100%");
+                $(".modal").css("max-width", "500px");
+            })
+
+        })
+    </script>
+
+</body>
+</html>
