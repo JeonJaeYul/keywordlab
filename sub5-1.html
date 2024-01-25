@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+    <!-- 데스크탑 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_xl.css" />
+    <link rel="stylesheet" type="text/css" href="./css/css_lg.css" />
+    <!-- 태블릿 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_md.css" />
+    <!-- 모바일 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_sm.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
 
 	<script src="https://kit.fontawesome.com/d31a113c70.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -33,15 +41,15 @@
                 <li>
                     <ul class="navbar2">
                         <li><a href="./sub1-1.html">회사소개</a></li>
-                        <li><a href="#">회사연혁</a></li>
+                        <li>회사연혁</li>
                     </ul>
                 </li>
                 <li>
                     <ul class="navbar2">
                         <li><a href="./sub2-1.html">체험단 마케팅</a></li>
                         <li><a href="./sub2-2.html">스마트스토어 마케팅</a></li>
-                        <li><a href="#">플레이스 마케팅</a></li>
-                        <li><a href="#">인스타그램 마케팅</a></li>
+                        <li>플레이스 마케팅</li>
+                        <li>인스타그램 마케팅</li>
                     </ul>
                 </li>
                 <li>
@@ -52,7 +60,7 @@
                 </li>
                 <li>
                     <ul class="navbar2">
-                        <li><a href="./sub4-1.html">기사</a></li>
+                        <li>기사</li>
                     </ul>
                 </li>
                 <li>
@@ -65,7 +73,7 @@
         </nav>
 
         <nav id="navSide">
-            <h1 class="logoWhite"></h1>
+            <a href="./index.html"><h1 class="logoWhite"></h1></a>
             <ul class="navbar">
                 <li><a href="./sub1-1.html"><sup>01</sup> KEYWORD LAB <i class="fa-solid fa-circle-arrow-right"></i></a></li>
                 <li><a href="./sub2-1.html"><sup>02</sup> 서비스 소개 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
@@ -180,7 +188,7 @@
                 }
             </style>
             <div style="width: 60%">
-                <form action="#" method="post">
+                <form action="#" method="post" name="frm">
                     <hr />
                     <div class="form-row">
                         <div class="form-label">회사명</div>
@@ -327,7 +335,7 @@
                         <input type="checkbox" name="agree" /> 개인정보취급방침에 동의합니다.
                     </div>
                     <div class="form-row">
-                        <input type="submit" class="form-btn" value="문의하기">
+                        <input type="button" class="form-btn btnSubmit" value="문의하기">
                     </div>
                 </form>
             </div>
@@ -390,7 +398,7 @@
         </footer>
 
 
-        <div id="quick_btn"></div>
+        <a href="./sub5-1.html"><div id="quick_btn"></div></a>
         <div id="top_btn">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
@@ -442,6 +450,11 @@
                 $("#sectionDots li").removeClass("active");
                 $("#sectionDots li").eq(0).addClass("active");
                 $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+                return false;
+            })
+
+            $(".btnSubmit").click( function(){
+                alert("준비중입니다.");
                 return false;
             })
 

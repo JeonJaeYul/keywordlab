@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+    <!-- 데스크탑 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_xl.css" />
+    <link rel="stylesheet" type="text/css" href="./css/css_lg.css" />
+    <!-- 태블릿 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_md.css" />
+    <!-- 모바일 css -->
+    <link rel="stylesheet" type="text/css" href="./css/css_sm.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
 
 	<script src="https://kit.fontawesome.com/d31a113c70.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -33,15 +41,15 @@
                 <li>
                     <ul class="navbar2">
                         <li><a href="./sub1-1.html">회사소개</a></li>
-                        <li><a href="#">회사연혁</a></li>
+                        <li>회사연혁</li>
                     </ul>
                 </li>
                 <li>
                     <ul class="navbar2">
                         <li><a href="./sub2-1.html">체험단 마케팅</a></li>
                         <li><a href="./sub2-2.html">스마트스토어 마케팅</a></li>
-                        <li><a href="#">플레이스 마케팅</a></li>
-                        <li><a href="#">인스타그램 마케팅</a></li>
+                        <li>플레이스 마케팅</li>
+                        <li>인스타그램 마케팅</li>
                     </ul>
                 </li>
                 <li>
@@ -52,7 +60,7 @@
                 </li>
                 <li>
                     <ul class="navbar2">
-                        <li><a href="./sub4-1.html">기사</a></li>
+                        <li>기사</li>
                     </ul>
                 </li>
                 <li>
@@ -65,7 +73,7 @@
         </nav>
 
         <nav id="navSide">
-            <h1 class="logoWhite"></h1>
+            <a href="./index.html"><h1 class="logoWhite"></h1></a>
             <ul class="navbar">
                 <li><a href="./sub1-1.html"><sup>01</sup> KEYWORD LAB <i class="fa-solid fa-circle-arrow-right"></i></a></li>
                 <li><a href="./sub2-1.html"><sup>02</sup> 서비스 소개 <i class="fa-solid fa-circle-arrow-right"></i></a></li>
@@ -101,11 +109,11 @@
                     <li>
                         <a href="./sub2-2.html">스마트스토어 마케팅</a>
                     </li>
-                    <li>
-                        <a href="#">플레이스 마케팅</a>
+                    <li style="padding: 10px;">
+                        플레이스 마케팅
                     </li>
-                    <li>
-                        <a href="#">인스타그램 마케팅</a>
+                    <li style="padding: 10px;">
+                        인스타그램 마케팅
                     </li>
                 </ul>
             </div>
@@ -180,7 +188,7 @@
         </div>
 
 
-
+<!-- 
         <div class="subSection" style="margin-bottom: 5%">
             <div style="width: 100%; text-align: center;">
                 <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">
@@ -191,7 +199,7 @@
                 </p>
                 <div style="background-color: #ff0000;">슬라이드 갤러리 넣어야 한다..</div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -213,38 +221,27 @@
                     만족도가 높은 이유는 바로 여기 있습니다.
                 </h1>
                 <div style="display: flex; justify-content: space-between; text-align: left;">
-                    <div style="width: 30%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
+                    <div style="width: 33%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
                         <h5 style="margin-bottom: 5px;"><i class="fa-regular fa-thumbs-up"></i> 01</h5>
                         <h3 style="margin-bottom: 20px;">아무나 섭외하지 않습니다</h3>
                         <p style="font-size: 0.85rem; line-height: 180%;">
-                            키워드랩 체험단 서비스에 등록된 인플루언서는<br />
-                            최소 3년 이상 체험단 캠페인을 진행해 본<br />
-                            실력 있는 경험자만 참여할 수 있어 100%의<br />
-                            만족도를 제공합니다.
+                            키워드랩 체험단 서비스에 등록된 인플루언서는 최소 3년 이상 체험단 캠페인을 진행해 본 실력 있는 경험자만 참여할 수 있어 100%의 만족도를 제공합니다.
                         </p>
                     </div>
 
-                    <div style="width: 30%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
+                    <div style="width: 33%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
                         <h5 style="margin-bottom: 5px;"><i class="fa-regular fa-thumbs-up"></i> 02</h5>
                         <h3 style="margin-bottom: 20px;">키워드랩 인플루언서 등급제</h3>
                         <p style="font-size: 0.85rem; line-height: 180%;">
-                            인플루언서의 캠페인 이력 , 고객 만족도를<br />
-                            평가하여 내부 등급제를 운영하고 있습니다.<br />
-                            노쇼 방지와 모든 캠페인을 꼼꼼하게 달성했는지<br />
-                            심사를 통하여 보다 좋은 서비스를 제공하기 위해<br />
-                            최선을 다 하고 있습니다.
+                            인플루언서의 캠페인 이력, 고객 만족도를 평가하여 내부 등급제를 운영하고 있습니다. 노쇼 방지와 모든 캠페인을 꼼꼼하게 달성했는지 심사를 통하여 보다 좋은 서비스를 제공하기 위해 최선을 다 하고 있습니다.
                         </p>
                     </div>
 
-                    <div style="width: 30%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
+                    <div style="width: 33%; padding: 30px; background-color: #fcfcfc; border-radius: 30px; box-sizing: border-box;">
                         <h5 style="margin-bottom: 5px;"><i class="fa-regular fa-thumbs-up"></i> 03</h5>
-                        <h3 style="margin-bottom: 20px;">광고주 전용 결과 보고서 제공.</h3>
+                        <h3 style="margin-bottom: 20px;">광고주 전용 결과 보고서 제공</h3>
                         <p style="font-size: 0.85rem; line-height: 180%;">
-                            한눈에 확인하기 편리하고 정확한 데이터.<br />
-                            진행 중인 캠페인 및 마케팅 현황을 실시간으로<br />
-                            확인 가능하며 , 조회수 , 유입 수를 체크하여<br />
-                            매출이 상승할 수 있는 결과 보고서를 제공해<br />
-                            드립니다.
+                            한눈에 확인하기 편리하고 정확한 데이터. 진행 중인 캠페인 및 마케팅 현황을 실시간으로 확인 가능하며 , 조회수 , 유입 수를 체크하여 매출이 상승할 수 있는 결과 보고서를 제공해드립니다.
                         </p>
                     </div>
                 </div>
@@ -452,7 +449,7 @@
         </footer>
 
 
-        <div id="quick_btn"></div>
+        <a href="./sub5-1.html"><div id="quick_btn"></div></a>
         <div id="top_btn">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
